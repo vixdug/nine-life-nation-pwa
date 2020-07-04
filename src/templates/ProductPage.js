@@ -90,7 +90,6 @@ export const pageQuery = graphql`
         title
         price
         availableForSale
-        compareAtPrice
         shopifyId
         selectedOptions {
           name

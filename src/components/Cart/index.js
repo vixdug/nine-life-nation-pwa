@@ -13,9 +13,26 @@ const Cart = () => {
     window.open(checkout.webUrl)
   }
 
+
   const line_items = checkout.lineItems.map(line_item => {
     return <LineItem key={line_item.id.toString()} line_item={line_item} />
   })
+
+  const createDynamicPermalink = () => {
+    var url = 'http://plant-dyed-goods.myshopify.com/cart/'
+    var items = []
+    checkout.lineItems.map(line_item => {
+    var decrypt_variant_id = atob(line_item.variant.id.toString())
+    var variant_id = decrypt_variant_id.split("/").pop()
+    var quantity = line_item.quantity
+      items.push(`${variant_id}:${quantity}`)
+    })
+    return url.concat(items.join(','))
+  }
+
+  const redirectUrl = () => {
+    window.open(createDynamicPermalink());
+  }
 
   return (
     <div>
@@ -75,6 +92,14 @@ const Cart = () => {
         disabled={checkout.lineItems.length === 0}
       >
         Check out
+      </button>
+      <button
+        className="Button Cart--Checkout"
+        style={{ background: 'var(--secondary)' }}
+        onClick={redirectUrl}
+        disabled={checkout.lineItems.length === 0}
+      >
+        Check out jks
       </button>
     </div>
   )
