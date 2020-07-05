@@ -19,7 +19,7 @@ const Cart = () => {
   })
 
   const createDynamicPermalink = () => {
-    var url = 'http://plant-dyed-goods.myshopify.com/cart/'
+    var url = 'http://ninelifenation.myshopify.com/cart/'
     var items = []
     checkout.lineItems.map(line_item => {
     var decrypt_variant_id = atob(line_item.variant.id.toString())
@@ -99,7 +99,7 @@ const Cart = () => {
         onClick={redirectUrl}
         disabled={checkout.lineItems.length === 0}
       >
-        Check out jks
+        Cart Permalink
       </button>
     </div>
   )
