@@ -82,7 +82,7 @@ const ProductGrid = () => {
                     style={{ width: '%' }}
                     className="Nav--CTA"
                   >
-                    Learn More
+                    Shop
                   </Link>
                 </div>
               </div>

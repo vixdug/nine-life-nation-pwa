@@ -1,10 +1,10 @@
 ---
 template: HomePage
 slug: ''
-title: headless - the shopify + gatsby starter theme for digital commerce
-featuredImage: './images/headless_hero.jpg'
+title:
+featuredImage: './images/04-33-eg37h-inb44.png'
 subtitle: >-
-  ## the shopify + gatsby starter theme for digital commerce
+
 
 accordion:
   - content: >-
@@ -16,18 +16,14 @@ accordion:
   - content: >-
       Headless ecommerce enables businesses to sell anywhere, while managing products and inventory in the backend. Think of it as a way of having multiple digital storefronts from one backend system. Gatsby provides opportunities to add new headless commerce experiences for any Shopify store.
     title: headless commerce for shopify
-  - content: >-
-      This gatsby starter is designed for existing shopify stores to get started quickly. [download on github](https://github.com/ecomloop/headless-starter or [deploy to netlify](https://app.netlify.com/start/deploy?repository=https://github.com/ecomloop/headless-starter)
-    title: download theme for free (today!)
+
 meta:
   description: >-
-    the shopify + gatsby starter theme for digital commerce
+    Nine Life Nation
   title: headless
 ---
 
 
-##Headless commerce for Shopify with GatsbyJS
+##View all Products
 
-<a href="https://github.com/ecomloop/headless-starter" target="_blank" aria-label="Fork ecomloop/headless on GitHub" class="Nav--CTA">download on Github</a>
-
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/ecomloop/headless-starter" target="_blank" aria-label="Fork ecomloop/headless on GitHub" class="Nav--CTA">Deploy to Netlify</a>
+<a href="/products" target="_blank" aria-label="view all products" class="Nav--CTA">Product Catalog</a>

@@ -49,7 +49,7 @@ const ProductPage = ({ data }) => {
                   className="SingleService--Pagination--Link prev"
                   to={`/service/${thisEdge.previous.handle}`}
                 >
-                  Previous Service
+                  Previous Product
                 </Link>
               )}
               {thisEdge && thisEdge.next && thisEdge.next.handle && (
@@ -57,7 +57,7 @@ const ProductPage = ({ data }) => {
                   className="SingleService--Pagination--Link next"
                   to={`/solution/${thisEdge.next.handle}`}
                 >
-                  Next Service
+                  Next Product
                 </Link>
               )}
             </div>

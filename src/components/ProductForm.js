@@ -38,7 +38,7 @@ const ProductForm = ({ product }) => {
     },
     [client.product, productVariant.shopifyId, variants]
   )
-/* eslint-ensable react-hooks/exhaustive-deps */ 
+/* eslint-ensable react-hooks/exhaustive-deps */
   useEffect(() => {
     checkAvailability(product.shopifyId)
   }, [productVariant, checkAvailability, product.shopifyId])
@@ -150,7 +150,7 @@ const ProductForm = ({ product }) => {
         disabled={!available || adding}
         onClick={handleAddToCart}
       >
-        Get Started
+        Add to Cart
       </button>
 
       <h3>

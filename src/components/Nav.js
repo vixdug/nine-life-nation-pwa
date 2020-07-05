@@ -45,6 +45,7 @@ export class Navigation extends Component {
     return (
       <nav className={`Nav ${active ? 'Nav-active' : ''}`}>
         <div className="Nav--Container container">
+
           <Link to="/" onClick={this.handleLinkClick}>
             <Logo />
           </Link>
@@ -98,7 +99,9 @@ export class Navigation extends Component {
           >
             {active ? <X /> : <Menu />}
           </button>
+
         </div>
+
       </nav>
     )
   }

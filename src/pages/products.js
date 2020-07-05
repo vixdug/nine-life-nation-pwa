@@ -8,8 +8,9 @@ const ServicesPage = () => (
     <PageHeader
       title="shop the demo store"
       subtitle="check out the aweswome products"
-      backgroundImage="../images/headless_hero.jpg"
+      backgroundImage="../images/t-shirts-hanging-on-rack.jpg"
     />
+
     <section className="section">
       <div className="container">
         <ProductGrid />
